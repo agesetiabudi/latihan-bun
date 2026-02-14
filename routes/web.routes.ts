@@ -8,4 +8,5 @@ web.get('/schools', schoolController.getListData)
 web.get('/school/:id', schoolController.getDetailData)
 
 web.get('/scola/:id', schoolController.getDetailData)
+web.get('/scolas/:id', schoolController.getDetailData)
 export default web

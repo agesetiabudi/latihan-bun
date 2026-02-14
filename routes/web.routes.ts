@@ -7,6 +7,8 @@ const schoolController = new SchoolController()
 web.get('/schools', schoolController.getListData)
 web.get('/school/:id', schoolController.getDetailData)
 
+web.get('/schools/:id', schoolController.getDetailData)
+web.get('/schoolss/:id', schoolController.getDetailData)
 web.get('/scola/:id', schoolController.getDetailData)
 web.get('/scolas/:id', schoolController.getDetailData)
 export default web

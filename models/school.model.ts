@@ -5,5 +5,8 @@ export const SchoolModel = bookshelf.model('SchoolModel', {
     tableName: 'schools',
     users() {
         return this.hasMany(UserModel , 'school_id')
+    },
+    category() {
+        return this.hasMany(UserModel, 'school_id')
     }
 })
